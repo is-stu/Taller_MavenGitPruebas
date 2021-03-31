@@ -28,8 +28,10 @@ public class App {
         Long number2 = Long.valueOf(textNumber2);
 
         BasicCalculator calculator = new BasicCalculator();
-        Long result = calculator.sum(number1, number2);
 
-        System.out.println(number1 + " + " + number2 + " = " + result);
+        System.out.println(number1 + " + " + number2 + " = " + calculator.sum(number1, number2));
+        System.out.println(number1 + " - " + number2 + " = " + calculator.subtraction(number1, number2));
+        System.out.println(number1 + " * " + number2 + " = " + calculator.multiply(number1, number2));
+        System.out.println(number1 + " / " + number2 + " = " + calculator.divide(number1, number2));
     }
 }
